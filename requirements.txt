@@ -1,0 +1,22 @@
+# Core (pilot + early pipeline).  Install:  pip install -r requirements.txt
+#
+# These are minimum versions to get you running. Once the whole pipeline works,
+# freeze EXACT versions for reproducibility:   pip freeze > requirements.txt
+# (Pinning exact versions now, before anything is installed, just causes
+#  install failures — freeze at the end, not the start.)
+
+pandas>=2.2
+pyarrow>=17.0
+google-cloud-bigquery>=3.25
+db-dtypes>=1.3        # lets BigQuery results load straight into a pandas DataFrame
+numpy>=1.26
+matplotlib>=3.8
+jupyterlab>=4.2
+
+# Added later as the project grows — uncomment when you reach them:
+# scipy>=1.13          # stats / bootstrap helpers (HR2)
+# networkx>=3.3        # operator-clustering graph (HR1)
+# python-louvain>=0.16 # Louvain community detection (or igraph + leidenalg)
+# ruptures>=1.1        # change-point detection / PELT (HR3)
+# typer>=0.12          # CLI for the pipeline
+# pytest>=8.0          # test suite
