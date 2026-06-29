@@ -1,25 +1,12 @@
-# data is regenerable from the pipeline — never commit it
-data/raw/*
-data/intermediate/*
-data/derived/*
-!data/**/.gitkeep
+# Data — regenerable, and too big for git
+data/
 
-# credentials — NEVER commit your Google Cloud key
-gcp-key.json
-*-credentials.json
-service-account*.json
-.env
-
-# python
+# Python build / cache junk
 __pycache__/
-*.pyc
-.venv/
-venv/
+*.egg-info/
+.pytest_cache/
 .ipynb_checkpoints/
+.venv/
 
-# latex build artifacts
-thesis/*.aux
-thesis/*.log
-thesis/*.out
-thesis/*.toc
-thesis/*.synctex.gz
+# Stray build scripts (these were sandbox-only)
+**/build_*_nb.py
