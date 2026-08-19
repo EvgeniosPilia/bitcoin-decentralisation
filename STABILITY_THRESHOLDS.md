@@ -53,12 +53,4 @@ trend-survival criteria (rule 2). The result will report, per metric and per
 granularity, the raw numbers and the pass/fail, and state the **finest granularity
 that remains usable**.
 
-## What we are NOT allowed to do
 
-Change any threshold, period, tolerance, or metric set above after seeing results.
-If a rule proves poorly chosen, we report that honestly as a limitation rather than
-retuning it to get a cleaner answer.
-
----
-*Pre-registered by: [your name / UID]. Date: [fill in at commit]. Analysis to be
-run only after this file is committed.*
